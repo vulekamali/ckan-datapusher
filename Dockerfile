@@ -17,4 +17,6 @@ RUN pip install -r /src/datapusher/requirements.txt
 
 ENV JOB_CONFIG /src/datapusher/deployment/datapusher_settings.py
 
+EXPOSE 8800
+
 CMD ["python", "/src/datapusher/datapusher/main.py", "/src/datapusher/deployment/datapusher_settings.py"]
