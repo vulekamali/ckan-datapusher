@@ -15,6 +15,6 @@ RUN pip install -e git+https://github.com/ckan/datapusher.git#egg=datapusher \
  && pip install gunicorn
 RUN pip install -r /src/datapusher/requirements.txt
 
-ENV JOB_CONFIG='/usr/lib/ckan/datapusher/src/datapusher/deployment/datapusher_settings.py'
+ENV JOB_CONFIG /src/datapusher/deployment/datapusher_settings.py
 
-CMD gunicorn -b 0.0.0.0:8800 wsgi:app
+CMD ["python", "/src/datapusher/datapusher/main.py", "/src/datapusher/deployment/datapusher_settings.py"]
