@@ -15,8 +15,10 @@ RUN pip install -e git+https://github.com/ckan/datapusher.git#egg=datapusher \
  && pip install gunicorn
 RUN pip install -r /src/datapusher/requirements.txt
 
-ENV JOB_CONFIG /src/datapusher/deployment/datapusher_settings.py
+ADD datapusher_settings.py /datapusher_settings.py
+
+ENV JOB_CONFIG /datapusher_settings.py
 
 EXPOSE 8800
 
-CMD ["python", "/src/datapusher/datapusher/main.py", "/src/datapusher/deployment/datapusher_settings.py"]
+CMD ["python", "/src/datapusher/datapusher/main.py", "/datapusher_settings.py"]
