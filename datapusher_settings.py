@@ -1,4 +1,8 @@
 import uuid
+import logging
+
+
+log = logging.getLogger(__name__)
 
 DEBUG = False
 TESTING = False
@@ -9,6 +13,8 @@ PASSWORD = str(uuid.uuid4())
 NAME = 'datapusher'
 
 MAX_CONTENT_LENGTH = 1024 * 1024 * 50
+
+print("##### hello AAAAA")
 
 # database
 
