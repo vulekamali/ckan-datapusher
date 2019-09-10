@@ -11,6 +11,7 @@ RUN apt-get update \
                        libxml2-dev \
                        git \
                        libffi-dev
+RUN pip install --upgrade pip
 RUN pip install -e git+https://github.com/ckan/datapusher.git#egg=datapusher \
  && pip install gunicorn
 RUN pip install -r /src/datapusher/requirements.txt
