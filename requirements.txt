@@ -30,6 +30,6 @@ requests==2.13.0
 six==1.11.0
 SQLAlchemy==1.1.15
 Unidecode==0.4.21
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 WTForms==2.1
 xlrd==1.1.0
