@@ -22,7 +22,7 @@ lxml==4.1.1
 MarkupSafe==1.0
 messytables==0.15.2
 pycparser==2.18
-pyOpenSSL==17.3.0
+pyOpenSSL==17.5.0
 python-dateutil==2.6.1
 python-magic==0.4.13
 python-slugify==1.2.1
