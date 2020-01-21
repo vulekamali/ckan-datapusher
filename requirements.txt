@@ -26,7 +26,7 @@ pyOpenSSL==17.3.0
 python-dateutil==2.6.1
 python-magic==0.4.13
 python-slugify==1.2.1
-requests==2.13.0
+requests==2.20.0
 six==1.11.0
 SQLAlchemy==1.1.15
 Unidecode==0.4.21
