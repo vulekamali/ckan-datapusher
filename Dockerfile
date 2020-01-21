@@ -12,9 +12,8 @@ RUN apt-get update \
                        git \
                        libffi-dev
 RUN pip install --upgrade "pip>=19,<20"
-RUN pip install -e git+https://github.com/ckan/datapusher.git@1538e49#egg=datapusher \
- && pip install gunicorn
-RUN pip install -r /src/datapusher/requirements.txt
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 ENV JOB_CONFIG /src/datapusher/deployment/datapusher_settings.py
 
