@@ -16,7 +16,7 @@ html5lib==0.9999999
 idna==2.6
 ipaddress==1.0.18
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 json-table-schema==0.2.1
 lxml==4.1.1
 MarkupSafe==1.0
